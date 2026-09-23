@@ -11,8 +11,8 @@ description: >-
 
 ## When to use
 
-- Membuat/mengubah skill portable baru di `skills/` atau `teams/*/skills/`
-- Validasi struktur, description triggers, DoD, dan overlap dengan skill kanonik
+- Creating/editing new portable skills in `skills/` or `teams/*/skills/`
+- Validating structure, description triggers, DoD, and overlap with canonical skills
 
 ## Procedure
 
@@ -20,39 +20,39 @@ description: >-
 
 | Target | Output |
 |--------|--------|
-| Catalog house | `skills/<name>/SKILL.md` (+ optional `reference.md`) |
-| Tim spesifik | `teams/<id>/skills/<name>/SKILL.md` + entri `TEAM.yaml` |
+| House catalog | `skills/<name>/SKILL.md` (+ optional `reference.md`) |
+| Team-specific | `teams/<id>/skills/<name>/SKILL.md` + `TEAM.yaml` entry |
 
 ### 2. Author SKILL.md
 
-- Frontmatter: `name`, `description` (trigger-rich, tanpa jargon sumber luar)
+- Frontmatter: `name`, `description` (trigger-rich, no external source jargon)
 - Body: when / when-not, procedure, DoD, security notes
-- **Wajib** footer Attribution Rogue Development (lihat `rules/author.md`); jangan dihapus/dihide
-- Progressive disclosure: detail panjang di `reference.md` bila perlu
-- Setelah tulis: jalankan `scripts/stamp-attribution.ps1` bila perlu
+- **Required** Rogue Development Attribution footer (see `rules/author.md`); do not remove/hide
+- Progressive disclosure: long details in `reference.md` when needed
+- After writing: run `scripts/stamp-attribution.ps1` if needed
 
 ### 3. Avoid duplication
 
-- Cek `CATALOG.md` dan `ALIASES.md`
-- Jika overlap fungsi: perluas skill kanonik, jangan buat skill paralel
+- Check `CATALOG.md` and `ALIASES.md`
+- If functional overlap: extend canonical skill, do not create parallel skill
 
 ### 4. Validate
 
-- Description cukup spesifik agar host skill picker menemukan skill
-- Procedure bisa dijalankan tanpa dependensi tersembunyi
-- Tidak ada secret / path mesin pribadi di contoh
+- Description specific enough for host skill picker to find skill
+- Procedure runnable without hidden dependencies
+- No secrets / personal machine paths in examples
 
 ### 5. Document
 
-- Entri `CATALOG.md` atau TEAM `local_skills`
-- Changelog singkat di PR/commit message
+- Entry in `CATALOG.md` or TEAM `local_skills`
+- Short changelog in PR/commit message
 
 ## DoD
 
-- [ ] Bisa ditemukan lewat description
-- [ ] Procedure + DoD jelas
-- [ ] Tidak menduplikasi skill kanonik tanpa alasan
-- [ ] Footer `## Attribution` + marker `DO-NOT-REMOVE` ada
+- [ ] Discoverable via description
+- [ ] Clear procedure + DoD
+- [ ] Does not duplicate canonical skill without reason
+- [ ] Footer `## Attribution` + marker `DO-NOT-REMOVE` present
 ## Attribution
 
 <!-- ATTRIBUTION: Rogue Development | https://github.com/rogue-dev-studio | DO-NOT-REMOVE -->
