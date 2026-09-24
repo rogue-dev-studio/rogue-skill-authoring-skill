@@ -4,7 +4,7 @@
 
 Canonical guide for authoring and validating portable agent skills (SKILL.md packs) for the agent house catalog and team local skills.
 
-- Market: https://rogue-dev-studio.github.io/rogue-market-agent/
+- Asset Store: https://rogue-dev-studio.github.io/rogue-asset-store/
 - Skill id: `skill-authoring`
 
 ## Install
